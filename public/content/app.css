@@ -1,0 +1,44 @@
+/*
+'---------------------------------------------------------------'
+'   Filename: content.app.css                                   '
+'   Created by: Emander D. Dangla                               '
+'   Student ID: 301245113                                       '
+'   Date Created: 29/09/2022                                    '
+'   Description: Stylesheet for Emander Dangla Personal         '
+'                portfolio                                      '
+'---------------------------------------------------------------'
+'   Modification History                                        '
+'---------------------------------------------------------------'
+'   Date            Developer           Modification            '
+'   29/09/2022      Emander Dangla      Initial Creation        '
+'---------------------------------------------------------------'*/
+
+h1 {
+    font-size: 60px;
+    font-family: 'Comfortaa';
+}
+h5, p, h3, h4, h2, .font-comfortaa {
+    font-family: 'Comfortaa';
+}
+.container-sm {
+    text-align: center;
+}
+p{
+    line-height: 1.6;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.center {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 50%;
+    padding: 10px;
+}
+a {
+    text-decoration:none;
+}
+@media (min-width: 1200px) {
+    .container.projects{
+        max-width: 970px;
+    }
+}
