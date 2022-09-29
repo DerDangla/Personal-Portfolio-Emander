@@ -1,9 +1,13 @@
 {
   "name": "personal-portfolio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./server.js"
+  },
+  "engines": {
+    "node": "^16.0.0",
+    "npm": "^18.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
@@ -17,5 +21,18 @@
     "jquery": "^3.6.1",
     "morgan": "~1.9.1",
     "popper.js": "^1.16.1"
-  }
+  },
+  "description": "Emander's Personal Portfolio",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DerDangla/Personal-Portfolio-Emander.git"
+  },
+  "author": "Emander D. Dangla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DerDangla/Personal-Portfolio-Emander/issues"
+  },
+  "homepage": "https://github.com/DerDangla/Personal-Portfolio-Emander#readme"
 }
