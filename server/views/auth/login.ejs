@@ -1,0 +1,60 @@
+<%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
+
+<div class="container p-5">
+  <!-- Message Area -->
+      <% if(messages.length > 0) {%>
+        <div class="alert alert-danger"><%= messages %></div>
+      <% } %>
+
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4 border-secondary text-center">
+        <div class="border container-fluid border-secondary p-5">
+          <h2 class="py-5">Please Login</h2>
+          <form method="POST" autocomplete="off">
+            <fieldset class="form-group py-2">
+              <!--<label for="username">Username: </label> -->
+              <input
+                type="text"
+                class="form-control"
+                name="username"
+                placeholder="username"
+                id="username"
+                required
+                autofocus
+              />
+            </fieldset>
+
+            <fieldset class="form-group py-2">
+              <!--<label for="password">Password: </label>-->
+              <input
+                type="password"
+                class="form-control"
+                name="password"
+                placeholder="Password"
+                id="password"
+                required
+              />
+              
+            </fieldset>
+
+            <fieldset class="form-group text-right py-3">
+              <input type="submit" class="btn btn-dark form-control" value="Login" />
+            </fieldset>
+          </form>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="row justify-content-center pt-3">
+      <div class="col-4 border-secondary text-center">
+        <div class="border container-fluid border-secondary p-3">
+          Don't have an account? <a href="/register">Register Here</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<%- include ../partials/bottom_nav.ejs %> <%- include ../partials/footer.ejs %>
