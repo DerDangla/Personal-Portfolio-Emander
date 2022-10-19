@@ -11,6 +11,8 @@
 '---------------------------------------------------------------'
 '   Date            Developer           Modification            '
 '   29/09/2022      Emander Dangla      Initial Creation        '
+'   19/10/2022      Emander Dangla      added word break for    '
+'                                       all div and td          '
 '---------------------------------------------------------------'*/
 
 h1 {
@@ -53,3 +55,6 @@ label{
     font-family: 'Comfortaa';
     font-size: 20px;
 }
+td, div{
+    word-break:break-all;
+  }

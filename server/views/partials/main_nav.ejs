@@ -5,6 +5,7 @@
 
 <nav class="navbar navbar-expand-lg border-bottom">
     <div class="container-fluid">
+      <!-- Navigation Logo -->
       <a class="navbar-brand p-3" href="#"><img src="/Assets/images/logo.jpg" width="150"></a>
       
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -13,7 +14,7 @@
         
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav flex-fill">
-
+            <!-- Home Navigation Item -->
             <li class="nav-item p-4 flex-fill" >
               <% if(title == "Home") { %> 
                 <a class="nav-link active" aria-current="page" href="/home">
@@ -24,7 +25,7 @@
                 HOME
               </a>
             </li>
-
+            <!-- About Me Navigation Item -->
             <li class="nav-item p-4 flex-fill">
               <% if(title == "About Me") { %> 
                 <a class="nav-link active" aria-current="page" href="/about">
@@ -35,7 +36,7 @@
                 WHO I AM
               </a>
             </li>
-
+            <!-- Projects Navigation Item -->
             <li class="nav-item p-4 flex-fill">
               <% if(title == "Projects") { %> 
                 <a class="nav-link active" aria-current="page" href="/projects">
@@ -46,7 +47,7 @@
                 PROJECTS
               </a>
             </li>
-
+            <!-- Services Navigation Item -->
             <li class="nav-item p-4 flex-fill">
               <% if(title == "Services") { %> 
                 <a class="nav-link active" aria-current="page" href="/services">
@@ -57,7 +58,7 @@
                 WHAT I OFFER
               </a>
             </li>
-
+            <!-- Contact Me Navigation Item -->
             <li class="nav-item p-4 flex-fill">
               <% if(title == "Contact Me") { %> 
                 <a class="nav-link active" aria-current="page" href="/contact">
@@ -68,7 +69,7 @@
                 CONTACT ME
               </a>
             </li>
-
+            <!-- Business Contact Navigation Item -->
             <li class="nav-item p-4 flex-fill">
               <% if(title == "Business Contact") { %> 
                 <a class="nav-link active" aria-current="page" href="/business-contact">
@@ -79,20 +80,7 @@
                 BUSINESS CONTACT
               </a>
             </li>
-<!--
-            <li class="nav-item p-4 flex-fill">
-
-              <% if(title == "Login") { %> 
-                <a class="nav-link active" aria-current="page" href="/login">
-              <% } else { %> 
-                <a class="nav-link" aria-current="page" href="/login">
-              <% } %> 
-                <i class="fa-solid fa-address-book"></i>
-                LOG IN
-              </a>
-              
-            </li>-->
-
+            <!-- Display name and logout condition when logged in -->
             <% if(typeof displayName == 'string' && displayName) { %>
 
               <li class="nav-item p-4 flex-fill"><div class="nav-linka">
@@ -102,7 +90,7 @@
               <li class="nav-item p-4 flex-fill"><a href="/logout" class="nav-link">
                 <i class="fas fa-lg fa-sign-out-alt"></i> LOGOUT</a></li>
               
-                
+            <!-- Display login Navigation Item -->
             <% } else { %>
               <li class="nav-item p-4 flex-fill"><a href="/login" class="nav-link">
                 <i class="fas fa-lg fa-sign-in-alt"></i> LOGIN</a></li>

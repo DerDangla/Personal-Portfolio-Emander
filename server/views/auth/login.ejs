@@ -1,5 +1,7 @@
 <%- include ../partials/header.ejs %> <%- include ../partials/main_nav.ejs %>
 
+<!-- Content for the login page -->
+
 <div class="container p-5">
   <!-- Message Area -->
       <% if(messages.length > 0) {%>
@@ -8,8 +10,8 @@
 
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-4 border-secondary text-center">
-        <div class="border container-fluid border-secondary p-5">
+      <div class="col-11 col-md-7 col-sm-10 col-lg-5 col-xl-4 col-centered">
+        <div class="border border-secondary p-5">
           <h2 class="py-5">Please Login</h2>
           <form method="POST" autocomplete="off">
             <fieldset class="form-group py-2">
@@ -48,8 +50,8 @@
     </div>
 
     <div class="row justify-content-center pt-3">
-      <div class="col-4 border-secondary text-center">
-        <div class="border container-fluid border-secondary p-3">
+      <div class="col-11 col-md-7 col-sm-10 col-lg-5 col-xl-4 col-centered">
+        <div class="border text-center border-secondary p-3">
           Don't have an account? <a href="/register">Register Here</a>
         </div>
       </div>
