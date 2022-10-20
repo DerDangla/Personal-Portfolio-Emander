@@ -33,11 +33,11 @@
             <td class="align-middle"><%=ContactList[count].email %></td>
             
             <% if(typeof displayName == 'string' && displayName) { %>
-            <td class="align-middle col-1">
+            <td class="align-middle">
               <a href="/business-contact/edit/<%= ContactList[count]._id %>" class="btn btn-primary btn-sm">
               <i class="fas fa-pencil-alt"></i> Update</a>
           </td>
-          <td class="align-middle col-1">
+          <td class="align-middle">
               <a href="/business-contact/delete/<%= ContactList[count]._id %>" class="btn btn-danger btn-sm">
               <i class="fas fa-trash-alt"></i> Delete</a>
           </td>
